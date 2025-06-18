@@ -31,8 +31,7 @@ public class WebEventTrackerService implements WebEventTracker {
     }
 
     private void checkForDownloadActions(WebEvent event) {
-        boolean
-        = event.getBatch().stream()
+        boolean hasDownloadAction= event.getBatch().stream()
                 .anyMatch(item -> item.getActionName().equals("Download CV"));
         if (hasDownloadAction) {
             log.info("Download action detected for event");

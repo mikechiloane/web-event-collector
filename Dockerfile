@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-17 as build
+FROM maven:3.9.9-eclipse-temurin-21-alpine as build
 COPY src /home/app/src
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
