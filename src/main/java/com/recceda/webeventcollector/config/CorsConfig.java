@@ -1,4 +1,4 @@
-package com.faboda.s3_image_service.config;
+package com.recceda.webeventcollector.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

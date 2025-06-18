@@ -1,1 +1,11 @@
-spring.application.name=web-event-collector
+spring:
+  application:
+    name: web-event-collector
+  data:
+    mongodb:
+      database: ${MONGO_DB_NAME}
+      uri: ${MONGO_DB_URI}
+      auto-index-creation: on
+
+server:
+  port: 8080
